@@ -17,3 +17,6 @@
 
 node_modules
 output.css
+
+out.js
+out.js.map

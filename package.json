@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/index.js --bundle --outfile=public/out.js --sourcemap --watch --servedir=public",
-    "dev": "npx tailwindcss -i input.css -o public/output.css --watch"
+    "build": "esbuild src/index.js --bundle --outfile=public/out.js & npx tailwindcss -i input.css -o public/output.css",
+    "watch:esbuild": "esbuild src/index.js --bundle --outfile=public/out.js --sourcemap --watch --servedir=public",
+    "watch:tailwind": "npx tailwindcss -i input.css -o public/output.css --watch"
   },
   "author": "",
   "license": "ISC",
